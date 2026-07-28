@@ -1,0 +1,20 @@
+{
+  "name": "@cinatra-ai/wordpress-widget-chat-skill",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "description": "System prompt for the Cinatra WordPress in-CMS chat widget — when to call the WordPress content-editor tool versus answering conversationally, how to summarize a tool result in plain English, and the demote-then-edit revision behavior on published posts. Extracted from @cinatra-ai/wordpress-mcp-connector (cinatra#2090).",
+  "type": "module",
+  "files": [
+    "skills"
+  ],
+  "cinatra": {
+    "apiVersion": "cinatra.ai/v1",
+    "kind": "skill",
+    "displayName": "WordPress Widget Chat Skill",
+    "skillRole": "injectable",
+    "dependencies": [],
+    "capabilities": {
+      "widget-chat.wordpress-content-editor": "wordpress-widget-chat"
+    }
+  }
+}
